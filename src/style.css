@@ -13,3 +13,7 @@ body {
 .flex {
   display: flex;
 }
+
+.flexWrap {
+  flex-wrap: wrap;
+}

@@ -14,7 +14,7 @@ export default {
   <div id="cardContainer">
     <div>
       <h3>found 39 cards</h3>
-      <div class="flex">
+      <div class="flex flexWrap gap4">
         <AppCard />
         <AppCard />
         <AppCard />
@@ -35,11 +35,15 @@ export default {
   margin-top: 10px;
   width: 1200px;
   margin: auto;
-  height: 80vh;
+
 }
 
 #cardContainer>div {
   padding: 2rem;
+}
+
+.gap4 {
+  gap: 4%;
 }
 
 h3 {
