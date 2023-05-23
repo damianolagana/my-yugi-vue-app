@@ -8,3 +8,8 @@ body {
   font-family: sans-serif;
   background-color: #d48f38;
 }
+
+/* FLEX */
+.flex {
+  display: flex;
+}

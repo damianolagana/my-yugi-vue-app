@@ -1,9 +1,16 @@
 <script >
 import AppHeader from './components/AppHeader.vue';
+import AppCardContainer from './components/AppCardContainer.vue';
+
+
+
 
 export default {
   components: {
-    AppHeader
+    AppHeader,
+    AppCardContainer,
+
+
   }
 }
 </script>
@@ -12,6 +19,10 @@ export default {
   <header>
     <AppHeader />
   </header>
+  <main>
+    <AppCardContainer />
+
+  </main>
 </template>
 
 <style scoped></style>
