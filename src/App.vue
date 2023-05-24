@@ -21,9 +21,15 @@ export default {
     }
   },
   mounted() {
-    axios.get(this.urlAPI).then((answer) => {
-      console.log(answer.data.results)
+
+
+    axios.get(this.urlAPI).then(answer => {
+
+      this.store.characters = answer.data.data
+
     })
+
+    console.log(this.store)
   }
 }
 </script>
@@ -38,6 +44,7 @@ export default {
   </main>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use './styles/general.scss'
 </style>
+

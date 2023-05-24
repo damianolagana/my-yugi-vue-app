@@ -1,30 +1,39 @@
 <script >
-export default {
-  name: "AppCard"
+import { store } from '../data/store';
 
+export default {
+  name: "AppCard",
+  data() {
+    return {
+      store
+
+    }
+  }
 }
 </script>
 
 <template>
-  <div id="card">
+  <div v-for="(character, i) in store.characters" class="card">
     <div>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmW7ivsz2uIq64IvpbO80TJPHpVStz20z31A&usqp=CAU"
-        alt="">
+      <img :src="character.card_images[0].images_url" alt="">
     </div>
     <div>
-      Text
+      {{ character.name }}
     </div>
     <div>
-      texto nero
+      {{ character.archetype }}
     </div>
   </div>
 </template>
 
 <style scoped>
-#card {
+.card {
   background-color: #d48f38;
   margin-bottom: 1rem;
+  width: calc(100%/6)
+}
 
-
+img {
+  width: 100%;
 }
 </style>

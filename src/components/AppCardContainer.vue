@@ -16,13 +16,7 @@ export default {
       <h3>found 39 cards</h3>
       <div class="flex flexWrap gap4">
         <AppCard />
-        <AppCard />
-        <AppCard />
-        <AppCard />
-        <AppCard />
-        <AppCard />
-        <AppCard />
-        <AppCard />
+
       </div>
 
     </div>
