@@ -15,22 +15,28 @@ export default {
 <template>
   <div v-for="(character, i) in store.characters" class="card">
     <div>
-      <img :src="character.card_images[0].images_url" alt="">
+      <img :src="character.card_images[0].image_url" alt="">
     </div>
-    <div>
+    <div class="cardText">
       {{ character.name }}
     </div>
-    <div>
+    <div class="cardText">
       {{ character.archetype }}
     </div>
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .card {
   background-color: #d48f38;
   margin-bottom: 1rem;
-  width: calc(100%/6)
+  width: calc(100%/6);
+  color: white;
+}
+
+.cardText {
+  text-align: center;
+  padding: 10px;
 }
 
 img {
