@@ -1,6 +1,11 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
-    characters: []
-
+    loading: true,
+    characters: [],
+    selectOptions: [
+        "Price",
+        "Type",
+        "Archetype"
+    ]
 });

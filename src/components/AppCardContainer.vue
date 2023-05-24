@@ -1,16 +1,20 @@
 <script >
 import AppCard from './AppCard.vue';
+import AppSelect from './AppSelect.vue';
 
 export default {
+  name: "AppCardContainer",
+
   components: {
-    AppCard
+    AppCard,
+    AppSelect
   },
-  name: "AppCardContainer"
 
 }
 </script>
 
 <template>
+  <AppSelect />
   <div id="cardContainer">
     <div>
       <h3>found 39 cards</h3>
@@ -27,7 +31,7 @@ export default {
 #cardContainer {
   background-color: white;
   margin-top: 10px;
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
 
 }
