@@ -29,7 +29,8 @@ export default {
 
     })
 
-    console.log(this.store)
+
+
   }
 }
 </script>
